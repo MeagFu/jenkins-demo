@@ -1,5 +1,10 @@
 pipeline {
   agent any
+
+  environment {
+    CHENQINGLIN = 'chenqinglin'
+  }
+
   stages {
     stage('build') {
       steps {
