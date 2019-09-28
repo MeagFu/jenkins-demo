@@ -12,11 +12,6 @@ pipeline {
         sh 'echo chenqinglin'
       }
     }
-    stage('sanity check') {
-      steps {
-        input '你真的要继续执行吗'
-      }
-    }
     stage('cql') {
       steps {
         sh 'echo 车额'
