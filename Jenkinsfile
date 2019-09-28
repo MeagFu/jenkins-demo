@@ -6,5 +6,10 @@ pipeline {
         sh 'echo chenqinglin'
       }
     }
+    stage('cql') {
+      steps {
+        sh 'echo 车额'
+      }
+    }
   }
 }
