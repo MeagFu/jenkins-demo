@@ -1,3 +1,4 @@
+#!groovy
 pipeline {
   agent any
 
@@ -9,6 +10,11 @@ pipeline {
     stage('build') {
       steps {
         sh 'echo chenqinglin'
+      }
+    }
+    stage('sanity check') {
+      steps {
+        input '你真的要继续执行吗'
       }
     }
     stage('cql') {
