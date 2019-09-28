@@ -14,6 +14,7 @@ pipeline {
     stage('cql') {
       steps {
         sh 'echo 车额'
+        sh 'printenv'
       }
     }
   }
